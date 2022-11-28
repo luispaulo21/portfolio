@@ -1,0 +1,80 @@
+/* 
+==========================================
+=============== GRID =====================
+==========================================
+*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8,
+.column-9,
+.column-10,
+.column-11,
+.column-12 {
+  flex: 1;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.column-1 {
+  max-width: 64px;
+}
+
+.column-2 {
+  max-width: 152px;
+}
+
+.column-3 {
+  max-width: 240px;
+}
+
+.column-4 {
+  max-width: 328px;
+}
+
+.column-5 {
+  max-width: 416px;
+}
+
+.column-6 {
+  max-width: 504px;
+}
+
+.column-7 {
+  max-width: 592px;
+}
+
+.column-8 {
+  max-width: 680px;
+}
+
+.column-9 {
+  max-width: 768px;
+}
+
+.column-10 {
+  max-width: 856px;
+}
+
+.column-11 {
+  max-width: 944px;
+}
+
+.column-12 {
+  max-width: 1032px;
+}

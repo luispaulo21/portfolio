@@ -1,0 +1,111 @@
+/* 
+==========================================
+============== BANNER ====================
+==========================================
+*/
+
+.section__banner {
+  background-color: var(--primary-black);
+  height: 540px;
+  overflow: hidden;
+  padding-bottom: 3.2rem;
+  padding-top: 3.2rem;
+  position: relative;
+}
+
+.section__banner > div.container {
+  height: 100%;
+}
+
+.section__banner .banner__curriculo {
+  font-family: var(--poppins-medium);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-decoration: underline;
+}
+
+.section__banner .column-6:first-child > div:not(.logomarca__lp) {
+  padding-top: 11.4rem;
+} 
+
+.section__banner .banner__title {
+  position: relative;
+}
+
+.section__banner span {
+  font-size: var(--title-fs);
+  line-height: var(--title-lh);
+  position: relative;
+}
+
+.section__banner .arrow__left,
+.section__banner .arrow__right {
+  position: absolute;
+}
+
+.section__banner .arrow__left {
+  left: -12px;
+  top: -6px;
+}
+
+.section__banner .arrow__right {
+  bottom: -6px;
+  right: -12px;
+}
+
+.section__banner .banner__subtitle  {
+  margin: 0;
+  padding-bottom: 2.4rem;
+  padding-top: 1.6rem;
+}
+
+.section__banner .banner__img {
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.section__banner  .logomarca__lp {
+  animation: 7s linear infinite logoRotate;
+  left: -65px;
+  position: absolute;
+  top: 0;
+}
+
+.logomarca--rotate  {
+  max-height: 136px;  
+  max-width: 130px;
+}
+
+@keyframes logoRotate {
+  from {
+    transform: rotateZ(0deg);
+  } to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.section__benefits .benefits__container {
+  align-items: center;
+  background-color: var(--primary-yellow);
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+  position: relative;
+}
+
+.section__benefits .benefits__list {
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.section__benefits  ul li {
+  flex: 1 0 max-content;
+  margin-left: 3.2rem;
+  margin-right: 2.4rem;
+  font-family: var(--poppins-medium);
+  list-style: disc;
+}
