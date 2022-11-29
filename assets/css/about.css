@@ -1,0 +1,55 @@
+/* 
+==========================================
+=========== SEÇÃO SOBRE ==================
+==========================================
+*/
+
+.section__about {
+  padding-bottom: 7.2rem;
+  padding-top: 7.2rem;
+}
+
+.section__about .about__image {
+  position: relative;
+}
+
+.section__about .about__image .about__social {
+  align-items: center;
+  background-color: var(--primary-yellow);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  left: -209px;
+  max-width: 368px;
+  padding: 1.2rem 2.4rem;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 159px;
+  width: 100%;
+  z-index: -1;
+}
+
+.section__about .about__image .about__social p {
+  font-family: var(--poppins-medium);
+}
+
+.section__about .about__image .about__social ul {
+  display: flex;
+}
+
+.section__about .about__image .about__social li + li {
+  margin-left: 1.2rem;
+}
+
+.section__about .about__image img {
+  width: 106%;
+}
+
+.section__about .about__content {
+  padding-top: 2.4rem;
+}
+
+.section__about .about__content p {
+  padding-top: 1.6rem;
+}
