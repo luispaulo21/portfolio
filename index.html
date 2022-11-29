@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/grid.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/slide-infinity.js" defer></script>
   </head>
   <body>
 
@@ -75,17 +79,65 @@
     
     <section class="section__benefits">
       <div class="benefits__container">
-        <ul class="benefits__list color__black__primary">
-          <li class="content__size">Um site que se encaixa em qualquer dispositivo</li>
-          <li class="content__size">Um site otimizado para os mecânismos de pesqusisa</li>
-          <li class="content__size">Um site que carrega em segundos</li>
-          <li class="content__size">Um site que se encaixa em qualquer dispositivo</li>
-          <li class="content__size">Um site otimizado para os mecânismos de pesqusisa</li>
-          <li class="content__size">Um site que carrega em segundos</li>
-          <li class="content__size">Um site que se encaixa em qualquer dispositivo</li>
-        </ul>
+        <div class="benefits__box">
+          <ul class="benefits__list color__black__primary">
+            <li class="content__size">Um site otimizado para os mecânismos de pesqusisa</li>
+            <li class="content__size">Um site que se encaixa em qualquer dispositivo</li>
+            <li class="content__size">Um site que carrega em segundos</li>
+          </ul>
+        </div>
       </div>
     </section>
+
+    <main class="main__content">
+      <section class="section__about container">
+        
+        <div class="about__image column-6">
+          <div class="about__social">
+            <p class="content__size color__black__primary">Programador Front End</p>
+            <ul>
+              <li>
+                <a href="" aria-label="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C18 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26L14.5 21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z" fill="#141415"/>
+                  </svg>                    
+                </a>
+              </li>
+              <li>
+                <a href="" aria-label="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.98298 7.19704C6.19138 7.19704 7.17098 6.21744 7.17098 5.00904C7.17098 3.80065 6.19138 2.82104 4.98298 2.82104C3.77458 2.82104 2.79498 3.80065 2.79498 5.00904C2.79498 6.21744 3.77458 7.19704 4.98298 7.19704Z" fill="#141415"/>
+                    <path d="M9.23697 8.85493L9.23697 20.9939H13.006V14.9909C13.006 13.4069 13.304 11.8729 15.268 11.8729C17.205 11.8729 17.229 13.6839 17.229 15.0909V20.9949L21 20.9949L21 14.3379C21 11.0679 20.296 8.55493 16.474 8.55493C14.639 8.55493 13.409 9.56193 12.906 10.5149H12.855V8.85493H9.23697ZM3.09497 8.85493H6.86997L6.86997 20.9939H3.09497L3.09497 8.85493Z" fill="#141415"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="assets/images/imagem-sobre.webp">
+            <img src="assets/images/imagem-sobre.jpg" width="536" height="507" alt="">
+          </picture>
+        </div>
+        <div class="about__content column-6">
+          <h2 class="about__title title__size color__black__primary">
+            Olá, <span class="title__size color__black__primary ornament_line">Prazer!</span>
+          </h2>
+          <p class="about__text content__size color__black__secondary">
+            Eu me chamo Luis Paulo Cavalcante, trabalho com desenvolvimento de sites desde 2020. 
+          </p>
+          <p class="about__text content__size color__black__secondary">
+            Foi nesse ano que eu recebi a minha primeira oportunidade para atuar como desenvolvedor WordPress.
+          </p>
+          <p class="about__text content__size color__black__secondary">
+            Trabalhei um bom tempo com essa tecnologia, mas, senti a necessidade de evoluir, pois o meu coração sempre bateu mais forte pelas linhas de código.
+          </p>
+          <p class="about__text content__size color__black__secondary">
+            Hoje eu atuo exclusivamente com desenvolvimento de sites em HTML, CSS e JavaScript.
+          </p>
+        </div>
+
+      </section>
+    </main>
   
   </body>
 </html>

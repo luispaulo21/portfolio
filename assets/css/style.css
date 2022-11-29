@@ -109,3 +109,20 @@
   padding: 8px 16px;
   width: max-content;
 }
+
+.ornament_line {
+  position: relative;
+}
+
+.ornament_line::before {
+  background-color: var(--primary-yellow);
+  bottom: 2px;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  left: 50%;
+  position: absolute;
+  transform: translate3d(-50%, 0, 0);
+  width: 105%;
+  z-index: -1;
+}

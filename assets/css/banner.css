@@ -6,7 +6,7 @@
 
 .section__banner {
   background-color: var(--primary-black);
-  height: 540px;
+  height: 520px;
   overflow: hidden;
   padding-bottom: 3.2rem;
   padding-top: 3.2rem;
@@ -99,7 +99,6 @@
 .section__benefits .benefits__list {
   align-items: center;
   display: flex;
-  position: absolute;
 }
 
 .section__benefits  ul li {
