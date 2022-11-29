@@ -1,0 +1,57 @@
+/* 
+==========================================
+========== SEÇÃO HABILIDADES =============
+==========================================
+*/
+
+.section__skills::before {
+  background-color: rgba(64, 64, 74, 0.5);
+  content: '';
+  display: block;
+  filter: blur(120px);
+  height: 112px;
+  left: 50%;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  top: 50%;
+  width: 80%;
+  z-index: -1;
+}
+
+.section__skills {
+  background-color: var(--primary-white);
+  padding-bottom: 7.2rem;
+  padding-top: 7.2rem;
+  position: relative;
+}
+
+.section__skills .skills__title  {
+  text-align: center;
+  z-index: 1;
+}
+
+.section__skills .kills__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3.0rem;
+}
+
+.section__skills .kills__skills li {
+  align-items: center;
+  background-color: #ECECEE;
+  border-radius: 24px;
+  display: flex;
+  margin: 1.2rem;
+  padding: 4px 8px;
+}
+
+.section__skills .kills__skills li::before {
+  background-color: var(--primary-white);
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+}
