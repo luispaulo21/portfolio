@@ -1,0 +1,19 @@
+/* 
+==========================================
+============ SEÇÃO FOOTER ================
+==========================================
+*/
+
+.section__footer {
+  background-color: var(--primary-black);
+  padding-bottom: 2.0rem;
+  padding-top: 2.0rem;
+}
+
+.section__footer .footer__social {
+  display: flex;
+}
+
+.section__footer .footer__social li + li {
+  margin-left: 1.2rem;
+}
