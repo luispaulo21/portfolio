@@ -99,6 +99,10 @@
 .section__benefits .benefits__list {
   align-items: center;
   display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  transition: .8s;
 }
 
 .section__benefits  ul li {
