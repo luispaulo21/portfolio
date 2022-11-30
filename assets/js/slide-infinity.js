@@ -2,33 +2,44 @@
 
 const enableInfiniteSlide = () => {
   const containerSlideList = document.querySelector('.section__benefits .benefits__container'),
-        slideList = document.querySelector('.section__benefits .benefits__list');
+        slideList = document.querySelector('.section__benefits .benefits__list'),
+        allItemsList = slideList.querySelectorAll('li'),
+        containerListWidth = containerSlideList.offsetWidth,
+        referenceItem = slideList.querySelector('li:last-child').nextSibling;
+
+  let slideListWidth = containerSlideList.clientWidth,
+      sizeOfAllItems = 0,
+      scrollLeft = 0;
+
+  const addClonedItemsToList = () => {
+    for(let i = 0; i < allItemsList.length; i++) {
+      sizeOfAllItems += (allItemsList[i].offsetWidth + 56);
   
-  let cloneSlideList,
-      slideListWidth = slideList.scrollWidth,
-      scrollToLeft = 0;
-
-  const copySlideList = () => {
-    cloneSlideList = slideList.cloneNode(true);
-    // containerSlideList.appendChild(cloneSlideList);
+      if(sizeOfAllItems <= slideListWidth) {
+        cloneItemList(allItemsList[i])
+      } else {
+        return;
+      }
+      
+    }
   }
 
-  const activateScroll = () => {
-    const elementLeftDistance = slideList.getBoundingClientRect().left;
-    scrollToLeft += 2;
-    // slideList.style.transform = `translate3d(-${scrollToLeft}px, -50%, 0)`;
-    // (scrollToLeft >= (-scrollToLeft)) ? console.log('É maior') : console.log('É menor');
+  function cloneItemList(itemList) {
+    const itemListClone = itemList.cloneNode(true);
+    slideList.appendChild(itemListClone);
   }
 
-  setInterval(() => {
-    activateScroll();
-  }, 20);
+  const changeItemPosition = () => {
+  
+  }
 
-  console.log(-slideListWidth)
+  const scrollSlide = () => {
+    
+  }
+  
 
-
-
-  copySlideList();
+  addClonedItemsToList();
 }
 
-// enableInfiniteSlide();
+enableInfiniteSlide();
+window.addEventListener('resize', enableInfiniteSlide);

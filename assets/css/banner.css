@@ -17,6 +17,10 @@
   height: 100%;
 }
 
+.section__banner .column-6 {
+  z-index: 2;
+}
+
 .section__banner .banner__curriculo {
   font-family: var(--poppins-medium);
   font-size: 1.4rem;
@@ -60,10 +64,16 @@
 }
 
 .section__banner .banner__img {
-  right: 0;
+  height: 100%;
   position: absolute;
+  right: 0;
   top: 0;
   width: 50%;
+}
+
+.section__banner .banner__img img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .section__banner  .logomarca__lp {
@@ -90,6 +100,7 @@
   align-items: center;
   background-color: var(--primary-yellow);
   display: flex;
+  justify-content: center;
   overflow: hidden;
   padding-bottom: 2.4rem;
   padding-top: 2.4rem;
@@ -99,6 +110,7 @@
 .section__benefits .benefits__list {
   align-items: center;
   display: flex;
+  justify-content: flex-start;
   position: absolute;
   top: 50%;
   transform: translate3d(0, -50%, 0);
