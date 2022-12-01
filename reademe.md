@@ -1,1 +1,0 @@
-![Imagem do projeto](https://github.com/luispaulo21/portfolio/blob/main/cover.jpg)
