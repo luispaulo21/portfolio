@@ -27,7 +27,11 @@
 .column-9,
 .column-10,
 .column-11,
-.column-12 {
+.column-12,
+.column-1-mobile,
+.column-2-mobile,
+.column-3-mobile,
+.column-4-mobile {
   flex: 1 1 max-content;
   margin-left: 12px;
   margin-right: 12px;
@@ -81,4 +85,27 @@
   margin-left: 0;
   margin-right: 0;
   max-width: 1032px;
+}
+
+/* 
+==========================================
+=========== GRID MOBILE ==================
+==========================================
+*/
+.column-1-mobile {
+  max-width: 166px;
+}
+
+.column-2-mobile {
+  max-width: 355px;
+}
+
+.column-3-mobile {
+  max-width: 545px;
+}
+
+.column-4-mobile {
+  max-width: 735px;
+  margin-left: 0;
+  margin-right: 0;
 }
